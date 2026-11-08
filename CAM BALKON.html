@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)http://localhost:63342/kayacambalkon/index.html?_ijt=ot6pftkhic8spqr9pbgav1jblk&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./CAM BALKON_files/style.css">
+    
+    <title>Title</title>
+    
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<h1>CAMCI</h1>
+<p1>Cam balkon plastik doğrama vb. yapan kisilerdir</p1>
+<h1>FİYATLARIMIZ NELERDİR</h1>
+<p1>CAM BALKON=6.000 TL
+DUSAKABİN=10.000 TL</p1>
+<p1>SİNEKLİK=2.500TL</p1>
+<p1>DEVAMI İCİN https://www.kayacambalkon.com/ bu siteye gidiniz!</p1>
+<h1>SİRKET CALISANLARI</h1>
+<p1>Cem kaya ve Alpay kaya</p1>
+<h1>YERİMİZ</h1>
+<p1>Avcılar Yeşilkent Birlik Caddesi NO24 </p1>
+<h1>YORUMLARIMIZ</h1>
+<p1>ALPAY KAYA:cok iyi cam balkon tesekkurler</p1>
+<p1>Cem kaya:calısanlar cok guler yuzlu</p1>
+<p1>Neriman:professeyonel tek kelime</p1>
+<p1>Ezgi Y.:BEN BİLE BAYILDIM</p1>
+<button>https://www.kayacambalkon.com/</button>
+<h1>KAYA CAM BALKON SUNAR </h1>
+<img src="./CAM BALKON_files/pimapen.jpeg" alt="">;
+<img src="./CAM BALKON_files/kisbahcesi.webp" alt="">;
+<img src="./CAM BALKON_files/giyotin-cam-balkon-01.jpeg" alt="">;
+<h1>TELEFON NUMARAMIZ</h1>
+<p1>0535 521 1700</p1><script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>
